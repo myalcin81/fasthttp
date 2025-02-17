@@ -281,18 +281,18 @@ func (d *TCPDialer) dial(addr string, dualStack bool, timeout time.Duration) (ne
 			d.DNSCacheDuration = DefaultDNSCacheDuration
 		}
 
-		if !d.DisableDNSResolution {
-			go d.tcpAddrsClean()
-		}
+		//if !d.DisableDNSResolution {
+			//go d.tcpAddrsClean()
+		//}
 	})
 	deadline := time.Now().Add(timeout)
 	network := "tcp4"
 	if dualStack {
 		network = "tcp"
 	}
-	if d.DisableDNSResolution {
+	//if d.DisableDNSResolution {
 		return d.tryDial(network, addr, deadline, d.concurrencyCh)
-	}
+	//}
 	addrs, idx, err := d.getTCPAddrs(addr, dualStack, deadline)
 	if err != nil {
 		return nil, err
