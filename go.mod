@@ -1,4 +1,4 @@
-module github.com/valyala/fasthttp
+module github.com/myalcin81/fasthttp
 
 go 1.21
 
