@@ -20,7 +20,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/valyala/fasthttp/fasthttputil"
+	"github.com/myalcin81/fasthttp/fasthttputil"
 )
 
 // Make sure RequestCtx implements context.Context.

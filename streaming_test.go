@@ -9,7 +9,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/valyala/fasthttp/fasthttputil"
+	"github.com/myalcin81/fasthttp/fasthttputil"
 )
 
 func TestStreamingPipeline(t *testing.T) {

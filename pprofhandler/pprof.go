@@ -5,8 +5,8 @@ import (
 	"net/http/pprof"
 	rtp "runtime/pprof"
 
-	"github.com/valyala/fasthttp"
-	"github.com/valyala/fasthttp/fasthttpadaptor"
+	"github.com/myalcin81/fasthttp"
+	"github.com/myalcin81/fasthttp/fasthttpadaptor"
 )
 
 var (

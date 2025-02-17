@@ -8,8 +8,8 @@ import (
 	"os/exec"
 	"runtime"
 
-	"github.com/valyala/fasthttp"
-	"github.com/valyala/fasthttp/reuseport"
+	"github.com/myalcin81/fasthttp"
+	"github.com/myalcin81/fasthttp/reuseport"
 )
 
 const (

@@ -10,7 +10,7 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/valyala/fasthttp"
+	"github.com/myalcin81/fasthttp"
 )
 
 var headerContentTypeJson = []byte("application/json")

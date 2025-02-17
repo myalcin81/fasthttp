@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"log"
 
-	"github.com/valyala/fasthttp"
+	"github.com/myalcin81/fasthttp"
 )
 
 // Setup file handlers (aka 'file server config').

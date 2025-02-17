@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/valyala/fasthttp"
+	"github.com/myalcin81/fasthttp"
 )
 
 var (

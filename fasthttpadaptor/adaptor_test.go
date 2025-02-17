@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/valyala/fasthttp"
-	"github.com/valyala/fasthttp/fasthttputil"
+	"github.com/myalcin81/fasthttp"
+	"github.com/myalcin81/fasthttp/fasthttputil"
 )
 
 func TestNewFastHTTPHandler(t *testing.T) {

@@ -12,7 +12,7 @@ import (
 	"net"
 	"strings"
 
-	"github.com/valyala/fasthttp/tcplisten"
+	"github.com/myalcin81/fasthttp/tcplisten"
 )
 
 // Listen returns TCP listener with SO_REUSEPORT option set.

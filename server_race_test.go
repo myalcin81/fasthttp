@@ -4,9 +4,10 @@ package fasthttp
 
 import (
 	"context"
-	"github.com/valyala/fasthttp/fasthttputil"
 	"math"
 	"testing"
+
+	"github.com/myalcin81/fasthttp/fasthttputil"
 )
 
 func TestServerDoneRace(t *testing.T) {

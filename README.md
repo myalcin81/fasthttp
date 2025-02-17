@@ -176,7 +176,7 @@ go get -u github.com/valyala/fasthttp
 
 Unfortunately, fasthttp doesn't provide API identical to net/http.
 See the [FAQ](#faq) for details.
-There is [net/http -> fasthttp handler converter](https://pkg.go.dev/github.com/valyala/fasthttp/fasthttpadaptor),
+There is [net/http -> fasthttp handler converter](https://pkg.go.dev/github.com/myalcin81/fasthttp/fasthttpadaptor),
 but it is better to write fasthttp request handlers by hand in order to use
 all of the fasthttp advantages (especially high performance :) ).
 
@@ -413,14 +413,14 @@ So [profile](http://go.dev/blog/pprof) and optimize your
 code after switching to fasthttp. For instance, use [quicktemplate](https://github.com/valyala/quicktemplate)
 instead of [html/template](https://pkg.go.dev/html/template).
 
-* See also [fasthttputil](https://pkg.go.dev/github.com/valyala/fasthttp/fasthttputil),
-[fasthttpadaptor](https://pkg.go.dev/github.com/valyala/fasthttp/fasthttpadaptor) and
-[expvarhandler](https://pkg.go.dev/github.com/valyala/fasthttp/expvarhandler).
+* See also [fasthttputil](https://pkg.go.dev/github.com/myalcin81/fasthttp/fasthttputil),
+[fasthttpadaptor](https://pkg.go.dev/github.com/myalcin81/fasthttp/fasthttpadaptor) and
+[expvarhandler](https://pkg.go.dev/github.com/myalcin81/fasthttp/expvarhandler).
 
 
 ## Performance optimization tips for multi-core systems
 
-* Use [reuseport](https://pkg.go.dev/github.com/valyala/fasthttp/reuseport) listener.
+* Use [reuseport](https://pkg.go.dev/github.com/myalcin81/fasthttp/reuseport) listener.
 * Run a separate server instance per CPU core with GOMAXPROCS=1.
 * Pin each server instance to a separate CPU core using [taskset](http://linux.die.net/man/1/taskset).
 * Ensure the interrupts of multiqueue network card are evenly distributed between CPU cores.
@@ -606,7 +606,7 @@ This is an **unsafe** way, the result string and `[]byte` buffer share the same 
 
 * *Please provide real benchmark data and server information*
 
-  See [this issue](https://github.com/valyala/fasthttp/issues/4).
+  See [this issue](https://github.com/myalcin81/fasthttp/issues/4).
 
 * *Are there plans to add request routing to fasthttp?*
 
@@ -621,11 +621,11 @@ This is an **unsafe** way, the result string and `[]byte` buffer share the same 
     * [Fiber](https://github.com/gofiber/fiber)
     * [Gearbox](https://github.com/gogearbox/gearbox)
 
-  See also [this issue](https://github.com/valyala/fasthttp/issues/9) for more info.
+  See also [this issue](https://github.com/myalcin81/fasthttp/issues/9) for more info.
 
 * *I detected data race in fasthttp!*
 
-  Cool! [File a bug](https://github.com/valyala/fasthttp/issues/new). But before
+  Cool! [File a bug](https://github.com/myalcin81/fasthttp/issues/new). But before
   doing this check the following in your code:
 
   * Make sure there are no references to [RequestCtx](https://pkg.go.dev/github.com/valyala/fasthttp#RequestCtx)
@@ -637,4 +637,4 @@ This is an **unsafe** way, the result string and `[]byte` buffer share the same 
 
 * *I didn't find an answer for my question here*
 
-  Try exploring [these questions](https://github.com/valyala/fasthttp/issues?q=label%3Aquestion).
+  Try exploring [these questions](https://github.com/myalcin81/fasthttp/issues?q=label%3Aquestion).
